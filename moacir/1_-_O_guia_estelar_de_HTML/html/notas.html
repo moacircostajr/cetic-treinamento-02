@@ -125,4 +125,100 @@
 <h1>Conteúdo dos Hyperlinks</h1>
 <p>Qualquer conteúdo</p>
 
-<h1></h1>
+<h1>Table</h1>
+<h2>Prós</h2>
+<ul>
+    <li>
+        Visualização de dados via linhas e colunas
+    </li>
+    <li>
+        Boa acessibilidade para leitura dos dados
+    </li>
+</ul>
+
+<h2>Contras</h2>
+<ul>
+    <li>Pouco flexível</li>
+    <li>
+        Precisa de estilização para melhor visualização
+    </li>
+</ul>
+<h3>NÃO USAR PARA CRIAR SEU LAYOUT</h3>
+<!-- TABLE BÁSICA -->
+<table>
+    <caption>Pessoas por idade</caption>
+    <thead>
+        <th>Nome</th>
+        <th>Idade</th>
+    </thead>
+    <tbody>
+        <td>Myke</td>
+        <td>35</td>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td>Total:</td>
+            <td>2 pessoas</td>
+        </tr>
+    </tfoot>
+    <tbody>
+        <tr>
+            <td>Diego</td>
+            <td>25</td>
+        </tr>
+    </tbody>
+</table>
+<!-- TABLE COMPLEXA -->
+<table>
+    <caption>Produzidos x Vendidos por Loja</caption>
+    <colgroup>
+        <col>
+        <col
+            span="2"
+            style="background-color: red;"
+        >
+        <col
+            span="2"
+            style="background-color: blue;"
+        >
+    </colgroup>
+    <thead>
+        <tr>
+            <th rowspan="2"></th>
+            <th
+                colspan="2"
+                scope="colgroup"
+            >
+                Afonso Pena
+            </th>
+            <th
+                colspan="2"
+                scope="colgroup"
+            >
+                Antônia Pereira
+            </th>
+        </tr>
+        <tr>
+            <th scope="col">Produzidos</th>
+            <th scope="col">Vendidos</th>
+            <th scope="col">Produzidos</th>
+            <th scope="col">Vendidos</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th scope="row">Vassouras</th>
+            <td>50</td>
+            <td>30</td>
+            <td>20</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <th scope="row">Baldes</th>
+            <td>10</td>
+            <td>10</td>
+            <td>30</td>
+            <td>25</td>
+        </tr>
+    </tbody>
+</table>
