@@ -1,0 +1,58 @@
+/*  inline(style="color: grey")  >  <style>  >  <link>  */
+h1 {
+  color: red;
+}
+h1 {
+  color: blue;
+}
+
+/*
+
+ESPECIFICIDADE
+É um cálculo matemático onde cada tipo de seletor e origem do estilo possuem valores a serem considerados.
+
+0. Universal selector, combinators e negation pseudo-class (:not())
+1. Element type selector e pseudo-elements (::before, ::after)
+10. Classes e attribute selectors ([type="radio"])
+100. ID selector
+1000. Inline
+
+A REGRA IMPORTANT
+Sobrescreve todas as regras
+
+Evitar o uso
+Quebra o fluxo natural da cascata
+Não é considerado uma boa prática
+
+Seu uso é indicado quando se está utilizando uma bilioteca externa e não é possível aplicar uma regra
+*/
+#my-title {
+  /* força 100 */
+  color: grey;
+}
+
+.tytle {
+  /* força 10 */
+  color: red;
+}
+
+h1.title#my-title {
+  /* força 1 + 10 + 100 = 111 */
+  color: blue;
+}
+
+* {
+  /* força 0 */
+  color: green;
+}
+
+body h1 {
+  /* força 1 + 1 = 2 */
+  color: orange;
+}
+
+#my-title,
+#my-title strong {
+  /* forças 100 e 101 */
+  color: pink;
+}
