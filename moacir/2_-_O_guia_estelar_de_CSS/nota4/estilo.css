@@ -1,0 +1,83 @@
+/*
+AT RULES
+Está relacionado com o comportamento do CSS
+Começa com o sinal de @ seguido do identificador e valor
+
+Exemplos comuns
+
+@import = incluir um CSS externo
+@media = regras condicionais para dispositivos
+@font-face = fontes externas
+@keyframes = animation
+*/
+ @import url("http://local.com/style.css");
+ @import "http://local.com/style.css";
+ @media (min-width: 500px){
+   /* regras aqui */
+ }
+ @font-face {
+   /* regras aqui */
+ }
+ @keyframes nomedaanimacao {
+  /* regras aqui */
+ }
+
+ /*
+ SHORTHAND
+ Agrupamento de comandos
+ Não irá considerar propriedades anteriores
+ Valores não especificados irão assumir o valor padrão
+ Geralmente a ordem descrita não importa, mas, se houver muitas propriedades com valores semelhantes, poderemos encontrar problemas
+
+ Propriedades que aceitam shorthand:
+ background, font, margin, border, border-top, border-right, border-bottom, border-left, border-width, border-color, border-style, transition, animation, transform, padding, list-style, border-radius
+ (https://developer.mozilla.org/pt-BR/docs/Web/CSS/Shorthand_properties)
+ */
+ /* ...font: bold italic .8em/1.2 Arial, sans-serif... */
+
+ /*
+ FUNÇÕES
+ Nome seguido de abre e fecha parêntesis
+ Recebe argumentos
+
+ Exemplos
+
+ @import url("...");
+ {
+   color: rgb(255, 0, 100);
+   width: calc(100% - 10px);
+ }
+ */
+
+ /*
+ DEVTOOLS (F12)
+ */
+
+ /*
+ CUIDADOS COM A ESCRITA
+
+ Formatação de texto (identação)
+ */
+
+ /*
+ VENDORT PREFIXES
+
+ Permite que browsers adicionem features a fim de colocar em uso alguma novidade que vemos no CSS
+
+  -webkit-... // Chrome, Safari, iOS e Android
+  -moz-... // Firefox
+  -ms-... // Internet Explorer
+  -o-... //Opera
+  (http://ireade.github.io/which-vendor-prefix/)
+  (https://caniuse.com)
+
+ p {
+  -webkit-background-clip: text; // Chrome, Safari, iOS e Android
+  -moz-background-clip: text; // Firefox
+  -ms-background-clip: text; // Internet Explorer
+  -o-background-clip: text; //Opera
+ }
+
+ Consultas
+
+ */
