@@ -1,2 +1,4 @@
 INSTALAÇÃO
 
+$ npx create-react-app todo --template typescript
+
