@@ -1,0 +1,14 @@
+INSTALAÇÃO
+
+$ npx create-react-app todo --template typescript
+
+ARQUIVOS REMOVIDOS:
+logo.svg
+index.css
+App.css
+App.tsx
+App.test.tsx
+setupTests.ts
+reportWebVitals.ts
+
+

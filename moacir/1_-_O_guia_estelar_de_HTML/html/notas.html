@@ -1,0 +1,243 @@
+<h1>Atributos globais mais utilizados</h1>
+<ul>
+    <li>class</li>
+    <li>
+        contenteditable="true" (permite editar o conteúdo)
+    </li>
+    <li>
+        data-x (x = qualquer coisa, expande o conteúdo do atributo data-?)
+    </li>
+    <li>hidden</li>
+    <li>id</li>
+    <li>style</li>
+    <li>tabindex</li>
+    <li>title (hint para a tag)</li>
+</ul>
+<h1>Aninhamento de tags</h1>
+<p>
+    Vou
+    <em>escrever</em>
+    um parágrafo
+</p>
+<h1>Caracteres especiais</h1>
+<ul>
+    <li>&nbsp; (espaço)</li>
+    <li>&lt; (menor que)</li>
+    <li>&gt; (maior que></li>
+    <li>&amp;(e comercial)</li>
+    <li>&quot;(aspas duplas)</li>
+</ul>
+<h1>Anatomia do HTML 5</h1>
+<!-- <!DOCTYPE html>
+  <html lang="pt-BR">
+  <head>
+    // SEO: SEARCH ENGINE OPTIMIZATION //
+    <meta charset="UTF-8"> // codificação de caracteres especiais
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> // portabilidade para dispositivos móveis
+    <meta name="author" content="Moacir Costa">
+    <meta name="description" content="Um website para iniciantes em programação"> // texto a ser apresentado na pesquisa do GOOGLE
+    <meta name="robots" content="noindex, nofollow"> // o site não deve ser indexado, o robo do GOOGLE não deve seguir os links dentro da pagina (padrão: index, follow)
+    <meta property="og:image" content="http://www..."> // indica a imagem a ser mostrada quando o site for compartilhado no FACEBOOK
+    <meta property="og:description" content="descrição"> // indica a descrição do site a ser mostrada quando o site for compartilhado no FACEBOOK
+    <meta property="og:title" content="título"> // indica o título do site a ser mostrado quando o site for compartilhado no FACEBOOK
+    <meta name="twitter:title" content="título"> // indica o título do site a ser mostrado quando o site for compartilhado no TWITTER
+    <title>Document</title>
+    // FAVICON //
+    <link rel="icon" href="..." /> // favicon básico
+    <link rel="apple-touch-icon-precomposed" href="..." /> // iPhone não-retina, iPod Touch e dispositivos Android 2.1+
+    <link rel="apple-touch-icon" sizes="48x48" href="..." /> // iPad de primeira e segunda geração
+    <link rel="apple-touch-icon" sizes="72x72" href="..." /> // iPad de primeira e segunda geração
+    <link rel="apple-touch-icon" sizes="96x96" href="..." /> // iPad de primeira e segunda geração
+    <link rel="apple-touch-icon" sizes="144x144" href="..." /> // iPad com tela de retina de alta resolução
+    <link rel="apple-touch-icon" sizes="192x192" href="..." /> // iPad de terceira geração com tela de retina de alta resolução
+    <link rel="apple-touch-icon" sizes="256x256" href="..." /> // iPad de terceira geração com tela de retina de alta resolução
+    <link rel="apple-touch-icon" sizes="384x384" href="..." /> // iPad de terceira geração com tela de retina de alta resolução
+    <link rel="apple-touch-icon" sizes="512x512" href="..." /> // iPad de terceira geração com tela de retina de alta resolução
+</head>
+  <body>
+
+  </body>
+  </html> -->
+<h1>Listas</h1>
+<ol>
+    <li>Item</li>
+</ol>
+<ul>
+    <li>Item</li>
+</ul>
+<h1>Citações</h1>
+<blockquote cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote">
+    O
+    <strong>
+        elemento HTML
+        <code>&lt;blockquote&gt;</code>
+    </strong>
+    (ou
+    <em>HTML Block Quotation Element</em>
+    ) indica que um texto externo foi citado.
+</blockquote>
+<p>
+    De acordo com
+    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote">
+        <cite>página MDN blockquote</cite>
+    </a>
+</p>
+<p>
+    O elemento quote -
+    <code>&lt;q&gt;</code>
+    - é
+    <q cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/q">
+        usado para citações curtas que não precisam de parágrafos ou quebras de linha.
+    </q>
+    --
+    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/q">
+        <cite>MDN q page</cite>
+    </a>
+    .
+</p>
+<h1>Abreviações</h1>
+<p>
+    Usamos
+    <abbr title="Hypertext Markup Language">HTML</abbr>
+    para estruturar nossos elementos da web.
+</p>
+<h1>
+    Detalhes de contato (o contato de quem fez a página HTML)
+</h1>
+<address>
+    <p>
+        Mayk Brito
+        <br>
+        <strong>Campo Grande, MS</strong>
+    </p>
+</address>
+<h1>Lista de descrição</h1>
+<h2>Glossário</h2>
+<dl>
+    <dt>Hypertext</dt>
+    <dd>É um hypertexto com possibilidades...</dd>
+
+    <dt>Markup</dt>
+    <dd>Marcação do texto</dd>
+
+    <dt>Lna</dt>
+    <dd>É um hypertexto com possibilidades...</dd>
+</dl>
+<h1>Representando códigos de computador</h1>
+<code>
+    document
+      .querySelector("body")
+    &lt;pre&gt;
+</code>
+<h1 id="fragmento">Hyperlinks - Elemento âncora</h1>
+<a
+    href="http://google.com"
+    target="_blank"
+>
+    Conteúdo
+</a>
+<a href="mailto:moacircostajr@gmail.com">Conteúdo</a>
+<a href="tel:+5585981861554">Conteúdo</a>
+<a href="#fragmento">Conteúdo</a>
+<a download="http://path_to_download...">Conteúdo</a>
+
+<h1>Conteúdo dos Hyperlinks</h1>
+<p>Qualquer conteúdo</p>
+
+<h1>Table</h1>
+<h2>Prós</h2>
+<ul>
+    <li>
+        Visualização de dados via linhas e colunas
+    </li>
+    <li>
+        Boa acessibilidade para leitura dos dados
+    </li>
+</ul>
+
+<h2>Contras</h2>
+<ul>
+    <li>Pouco flexível</li>
+    <li>
+        Precisa de estilização para melhor visualização
+    </li>
+</ul>
+<h3>NÃO USAR PARA CRIAR SEU LAYOUT</h3>
+<!-- TABLE BÁSICA -->
+<table>
+    <caption>Pessoas por idade</caption>
+    <thead>
+        <th>Nome</th>
+        <th>Idade</th>
+    </thead>
+    <tbody>
+        <td>Myke</td>
+        <td>35</td>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td>Total:</td>
+            <td>2 pessoas</td>
+        </tr>
+    </tfoot>
+    <tbody>
+        <tr>
+            <td>Diego</td>
+            <td>25</td>
+        </tr>
+    </tbody>
+</table>
+<!-- TABLE COMPLEXA -->
+<table>
+    <caption>Produzidos x Vendidos por Loja</caption>
+    <colgroup>
+        <col>
+        <col
+            span="2"
+            style="background-color: red;"
+        >
+        <col
+            span="2"
+            style="background-color: blue;"
+        >
+    </colgroup>
+    <thead>
+        <tr>
+            <th rowspan="2"></th>
+            <th
+                colspan="2"
+                scope="colgroup"
+            >
+                Afonso Pena
+            </th>
+            <th
+                colspan="2"
+                scope="colgroup"
+            >
+                Antônia Pereira
+            </th>
+        </tr>
+        <tr>
+            <th scope="col">Produzidos</th>
+            <th scope="col">Vendidos</th>
+            <th scope="col">Produzidos</th>
+            <th scope="col">Vendidos</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th scope="row">Vassouras</th>
+            <td>50</td>
+            <td>30</td>
+            <td>20</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <th scope="row">Baldes</th>
+            <td>10</td>
+            <td>10</td>
+            <td>30</td>
+            <td>25</td>
+        </tr>
+    </tbody>
+</table>
