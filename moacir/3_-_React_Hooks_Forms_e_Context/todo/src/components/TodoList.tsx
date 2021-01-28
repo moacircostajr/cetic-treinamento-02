@@ -2,11 +2,8 @@ import React from 'react'
 import { Todo } from '../models/Todo'
 import { TodoListItem } from './TodoListItem'
 
-const TodoList = () => {
-  const todos: Todo[] = [
-    { id: 1, title: 'Ir ao supermercado', done: true },
-    { id: 1, title: 'Ir à academia', done: false }
-  ]
+const TodoList = (todos: Todo[]) => {
+
   return (
     <div className="uk-container">
       <table className="uk-table">
