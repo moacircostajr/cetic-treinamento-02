@@ -1,12 +1,15 @@
 import React from 'react'
+import TodoContext from '../contexts/TodoContext' // chaves retiradas
 import Navbar from './Navbar'
 import TodoList from './TodoList'
 
 const App = () => {
   return (
     <>
-      <Navbar />
-      <TodoList />
+      <TodoContext>
+        <Navbar />
+        <TodoList />
+      </TodoContext>
     </>
   )
 }
